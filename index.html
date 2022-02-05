@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS\fullpage.css">
+  <script src="https://kit.fontawesome.com/dbf804cee5.js" crossorigin="anonymous"></script>
+  <script src="JS\fullpage.js" charset="utf-8"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+  </style>
+</head>
+
+<body>
+  <div id="fullpage">
+    <div class="section">
+      <header>
+        <nav class="nav-container">
+          <p class="logo">Jack <span>Bryan</span></p>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="intro">
+          <div class="intro-text">
+            <h1>I'm <span>Jack</span></h1>
+            <p>A Front-End Web Developer</p>
+          </div>
+          <span class="scroll">
+            <a href="#about-us">
+              <i class="fas fa-arrow-down fa-bounce"></i>
+            </a>
+          </span>
+        </div>
+      </header>
+    </div>
+    <div class="section">
+
+      <div class="slide">Another test</div>
+      <div class="slide">anotehr rename</div>
+      <div class="slide">Slide 2.3</div>
+    </div>
+    <div class="section portfolio">
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <img src="IMG\9c22d4f9fe1da7c070c7a30b3c397673.jpg" style="width:100%;"alt="">
+          <div class="card-text">
+            <h4>BoomScape RSPS</h4>
+            <p>Some random text</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="IMG\d158e0e19c1691cf746d3b5bccf8064b.png" style="width:100%;"alt="">
+          <div class="card-text">
+            <h4>BoomCraft</h4>
+            <p>Some random text</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="IMG\652a1ccc98e6fa01f3df78b874991895.png" style="width:100%;"alt="">
+          <div class="card-text">
+            <h4>Hall & Randall Plumbers</h4>
+            <p>Some random text</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="IMG\20d5636c32454790824e132f81b93988.jpg" style="width:100%;"alt="">
+          <div class="card-text">
+            <h4>The Potato Man Sussex</h4>
+            <p>Some random text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<p>stylesheet</p>
+  <script type="text/javascript">
+    new fullpage('#fullpage', {
+      navigation: false,
+      responsiveWidth: 700,
+      anchors: ['home', 'about-us', 'contact'],
+      parallax: true,
+      onLeave: function(origin, destination, direction) {
+        console.log("Leaving section" + origin.index);
+      },
+    });
+  </script>
+</body>
+
+</html>
